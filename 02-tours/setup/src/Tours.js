@@ -9,7 +9,15 @@ const Tours = ({ tours }) => {
       </div>
       <div>
         {tours.map((tour) => {
-          return <Tour key={tour.id} {...tour}></Tour>;
+          return (
+            <Tour
+              key={tour.id}
+              image={tour.image}
+              info={tour.info}
+              price={tour.price}
+              name={tour.name}
+            ></Tour>
+          );
         })}
       </div>
     </section>
