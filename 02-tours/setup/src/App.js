@@ -40,7 +40,9 @@ function App() {
       <main>
         <div>
           <h4>no tours left</h4>
-          <button onClick={() => fetchTours()}>Refresh</button>
+          <button className="btn" onClick={() => fetchTours()}>
+            Refresh
+          </button>
         </div>
       </main>
     );
